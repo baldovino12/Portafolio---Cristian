@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cristian — Desarrollador Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="dark">
+
+  <!-- canvas de estrellas, cubre todo el fondo -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <div class="nav-logo">
+        <span class="logo-dot"></span>
+        Cristian
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn-nav">Hablemos</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="about" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- texto izquierda -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+
+      <h1 class="hero-title">
+        Hola, soy<br>
+        <span class="accent">Cristian</span>
+      </h1>
+
+      <p class="hero-desc">
+        Estudiante de Ingeniería en Sistemas y desarrollador web.
+        Creo aplicaciones modernas, funcionales y orientadas
+        a soluciones reales de negocio.
+      </p>
+
+      <div class="hero-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+        <span>Python</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-star"></i>
+          Ver proyectos
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- laptop con código animado -->
+    <div class="hero-visual">
+
+      <!-- resplandor de fondo -->
+      <div class="laptop-glow"></div>
+
+      <div class="laptop">
+
+        <!-- pantalla -->
+        <div class="laptop-screen">
+          <div class="screen-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="screen-title">main.js</span>
+          </div>
+          <div class="screen-body">
+            <pre class="code-block" id="code-display"></pre>
+            <span class="cursor" id="code-cursor">▌</span>
+          </div>
+        </div>
+
+        <!-- base -->
+        <div class="laptop-hinge"></div>
+        <div class="laptop-base">
+          <div class="laptop-touchpad"></div>
+        </div>
+
+      </div>
+
+      <!-- badges flotantes -->
+      <div class="float-badge fb-1">
+        <span class="fb-icon">⚡</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="float-badge fb-2">
+        <span class="fb-icon">🎨</span>
+        <span>CSS</span>
+      </div>
+      <div class="float-badge fb-3">
+        <span class="fb-icon">✅</span>
+        <span>Build exitoso</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="section projects">
+    <div class="section-inner">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Trabajo</span>
+        <h2>Proyectos destacados</h2>
+        <p>Aplicaciones web con enfoque en soluciones reales</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- VerduControl -->
+        <article class="project-card featured reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon">🥬</div>
+            <span class="project-tag live">En vivo</span>
+          </div>
+          <h3>VerduControl</h3>
+          <p>Sistema web para gestión de ventas en verdulerías. Registra ventas, calcula cambio automáticamente, muestra estadísticas del día con gráfica en tiempo real y guarda el historial en localStorage.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Chart.js</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://baldovino12.github.io/verducontrol/" target="_blank" class="btn-primary small">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Ver proyecto
+            </a>
+            <a href="https://github.com/baldovino12/verducontrol" target="_blank" class="btn-ghost small">
+              <i class="fa-brands fa-github"></i>
+              Código
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto placeholder 2 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🚧</div>
+            <span class="project-tag wip">Próximamente</span>
+          </div>
+          <h3>Próximo proyecto</h3>
+          <p>Nuevas aplicaciones en desarrollo. Enfocadas en resolver problemas reales con tecnologías modernas.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn-disabled">En desarrollo</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="skills" class="section skills">
+    <div class="section-inner">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Stack</span>
+        <h2>Habilidades</h2>
+        <p>Tecnologías que uso en mis proyectos</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal" style="--delay:.05s">
+          <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <p class="skill-desc">Estructura semántica</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.1s">
+          <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">CSS</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <p class="skill-desc">Diseño moderno y responsive</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.15s">
+          <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <p class="skill-desc">Lógica e interactividad</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.2s">
+          <div class="skill-icon bs"><i class="fab fa-bootstrap"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">Bootstrap</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <p class="skill-desc">Componentes y grid system</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.25s">
+          <div class="skill-icon py"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <p class="skill-desc">Automatización y scripts</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.3s">
+          <div class="skill-icon wp"><i class="fa-brands fa-wordpress"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">WordPress</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <p class="skill-desc">Themes y personalización</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.35s">
+          <div class="skill-icon php"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">PHP</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <p class="skill-desc">Backend básico y formularios</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.4s">
+          <div class="skill-icon db"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <p class="skill-desc">Bases de datos relacionales</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.45s">
+          <div class="skill-icon gh"><i class="fa-brands fa-github"></i></div>
+          <div class="skill-body">
+            <div class="skill-top">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <p class="skill-desc">Control de versiones</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="section contact">
+    <div class="section-inner">
+      <div class="contact-box reveal">
+        <div class="contact-glow"></div>
+        <span class="section-tag">Contacto</span>
+        <h2>¿Tienes un proyecto<br>en mente?</h2>
+        <p>Estoy disponible para colaborar en proyectos web. No dudes en escribirme.</p>
+        <div class="socials">
+          <a href="mailto:baldovino1203@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://github.com/Baldovino12" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/cristian-baldovino-024b52317" target="_blank" class="social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2025 · Portafolio · Hecho con <i class="fa-solid fa-heart"></i></span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
